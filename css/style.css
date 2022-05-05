@@ -53,6 +53,11 @@ body, html {
 	align-items: center;
 }
 
+._loading-icon {
+	background: url("../img/load.gif") center / 50px no-repeat;
+	height: 50px;
+}
+
 /* Header */
 
 .header {
