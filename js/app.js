@@ -76,6 +76,55 @@ mousewheel: false,
 
 
 
+//actor slider
+
+
+
+const swiper__actor = new Swiper('.slider__actor', {
+	loop: true,
+	mousewheel: true,
+	centeredSlides: true,
+	breakpoints: {
+		0: {
+			slidesPerView: 2.5,
+			spaceBetween: 10
+		},
+		// when window width is >= 320px
+		320: {
+		  slidesPerView: 3,
+		  spaceBetween: 10
+		},
+		// when window width is >= 480px
+		480: {
+		  slidesPerView: 4,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		640: {
+		  slidesPerView: 5,
+		  spaceBetween: 40
+		},
+		767: {
+			slidesPerView: 6,
+			spaceBetween: 10
+		},
+		975: {
+			slidesPerView: 8,
+			spaceBetween: 50
+		},
+		1200: {
+			slidesPerView: 10,
+			spaceBetween: 50
+		},
+		1500: {
+			slidesPerView: 12,
+			spaceBetween: 100
+		},
+	}
+});
+
+
+
 // burger btn
 
 
@@ -133,64 +182,6 @@ function onTabClick(item) {
 }
 	
 document.querySelector('.form-tab:nth-child(2)').click();
-	
-
-
-// log-reg avatar-btn	
-
-
-
-const modalBtn = document.querySelector('.header__avatar');
-const closeBtn = document.querySelector('.close');
-const modalForm = document.querySelector('.shadow-log-reg');
-let modalOpen = false;
-modalBtn.addEventListener('click', () => {
-if(!modalOpen) {
-		modalForm.classList.add('open');
-		modalOpen = true;
-	} else {
-		modalForm.classList.remove('open');
-		modalOpen = false;
-	}	
-});	
-closeBtn.addEventListener('click', () => {
-	if(modalOpen) {
-		modalForm.classList.remove('open')
-		modalOpen = false;
-	} else {
-		modalForm.classList.add('open')
-		modalOpen = true;
-	}	
-});	
-
-
-
-// log-reg modal
-
-
-
-const log = document.getElementById("login");
-const reg = document.getElementById("register");
-const btn = document.getElementById("btn");
-const Lbtn = document.getElementById("LBtn");
-const Rbtn = document.getElementById("RBtn");
-
-function login() {
-	reg.style.left = "-400px";
-	log.style.left = "50px";
-	btn.style.left = "0px";
-	Lbtn.style.color = "#000";
-	Rbtn.style.color = "#fff";
-};
-
-function register() {
-	reg.style.left = "50px";
-	log.style.left = "450px";
-	btn.style.left = "110px";
-	Lbtn.style.color = "#fff";
-	Rbtn.style.color = "#000";
-};
-
 
 
 // player changer
@@ -254,7 +245,7 @@ showContainers.forEach((btn) =>
 
 
 
-// loader
+loader
 
 
 
