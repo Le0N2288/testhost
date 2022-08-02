@@ -39,7 +39,6 @@ body, html {
 	height: 100vh;
 	height: -webkit-fill-available;
 	z-index: 1;
-	position: fixed;
 }
 
 
