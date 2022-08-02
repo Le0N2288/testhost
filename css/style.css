@@ -30,12 +30,14 @@
 
 body, html {
 	background: linear-gradient(107.56deg, #101010 0%, #010101 100%);
+	background-attachment: fixed;
 	font-family: "Moserat", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	color: #FFFFFF;
 	width: 100vw;
 	height: 120vh;
+	z-index: 1;
 }
 
 
