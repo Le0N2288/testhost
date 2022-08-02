@@ -38,6 +38,7 @@ body, html {
 	width: 100vw;
 	height: 120vh;
 	z-index: 1;
+	position: fixed;
 }
 
 
