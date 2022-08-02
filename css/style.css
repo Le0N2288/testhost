@@ -36,7 +36,8 @@ body, html {
 	font-weight: 400;
 	color: #FFFFFF;
 	width: 100vw;
-	min-height: 100vh;
+	height: 100vh;
+	height: -webkit-fill-available;
 	z-index: 1;
 	position: fixed;
 }
